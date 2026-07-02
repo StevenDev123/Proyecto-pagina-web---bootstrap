@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Atelier del Dulce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Erica+One&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+     <header>
+        <nav class="navbar bg-danger-subtle fixed-top">
+            <div class="container-fluid">
+            <h1><a class="navbar-brand" href="index.html"><img src="captura-removebg-preview.png" width="110"></a></h1>
+                  <form class="d-flex w-50" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                  <button class="btn btn-outline-light" type="submit"><img src="lupa buscador.png" width="20"></button>
+                  </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-danger Vr-erica-one-regular" id="offcanvasNavbarLabel">El Atelier del Dulce</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                   <a class="nav-link" href="Contactanos.html">Sing in</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="Nosotros.html">Conocenos</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="libro-reclamaciones.html">libro de reclamaciones</a>
+                </li>
+                <div class="text-danger text-center Vr-erica-one-regular">
+                    <h6>Todas las categorias</h6>
+                </div>
+                <li class="nav-item">
+                   <a class="nav-link" href="Tortas.html"><span class="Vr-pacifico-regular">Tortas</span></a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="Cheesecake.html"><span class="Vr-pacifico-regular">Cheescake</span></a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="Especiales.html"><span class="Vr-pacifico-regular">Especiales</span></a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="Bocadillos.html"><span class="Vr-pacifico-regular">Bocadillos</span></a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="Suffles.html"><span class="Vr-pacifico-regular">Suffles</span></a>
+                </li>
+            </ul>
+            </div>
+            </div>
+  </div>
+</nav>
+    </header>
+    <main class="Vr-main">
+        <div class="container">
+            <h2>Contactanos Aqui: </h2>
+        </div>
+        <br>
+        <div class="container bg-danger p-2 rounded-3">
+            <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+            <label for="validationCustom01" class="form-label"><span>Nombre</span></label>
+            <input type="text" class="form-control" id="validationCustom01" value="Nombre" required>
+            <div class="valid-feedback">
+               Buen Trabajo!
+            </div>
+            </div>
+            <div class="col-md-4">
+            <label for="validationCustom02" class="form-label"><span>Apellido</span></label>
+            <input type="text" class="form-control" id="validationCustom02" value="Apellido" required>
+            <div class="valid-feedback">
+               Buen Trabajo!
+            </div>
+           </div>
+           <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label"><span>Correo Electronico</span></label>
+           <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+               Escriba un correo valido
+            </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+            <label for="validationCustom03" class="form-label"><span>Ciudad</span></label>
+             <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+                Escriba una ciudad existente
+            </div>
+            </div>
+            <div class="col-md-3">
+            <label for="validationCustom04" class="form-label"><span>Pais</span></label>
+            <select class="form-select" id="validationCustom04" required>
+           <option selected disabled value=""></option>
+            <option>Peru</option>
+            <option>Brazil</option>
+            <option>Chile</option>
+            <option>Ecuador</option>
+           </select>
+            <div class="invalid-feedback">
+              Seleccione un estado existente
+            </div>
+           </div>
+           <div class="col-12">
+            <div class="form-check">
+           <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+           <label class="form-check-label" for="invalidCheck">
+               Acepta los terminos y condiciones
+            </label>
+           <div class="invalid-feedback">
+              Debe aceptar los terminos y condiciones
+            </div>
+            </div>
+            </div>
+           <div class="col-12">
+             <button class="btn btn-primary" type="submit">Enviar Aqui</button>
+            </div>
+          </form>
+        </div>
+        <div class="container p-3">
+            <h2>Ubiquenos aqui: </h2>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249743.36552340884!2d-77.1769312819088!3d-12.026985599999989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f746463c57%3A0xc59ff2932bdb4a18!2sFioris!5e0!3m2!1ses-419!2spe!4v1782082918611!5m2!1ses-419!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="text-center Vr-erica-one-regular">
+            <h2>"Donde cada postre cuenta una historia de dedicación y amor"</h2>
+        </div>
+    </main>
+    <footer>
+        <section>
+            <div class="bg-dark p-3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-3">
+                            <article>
+                                <h3 class="text-light Vr-erica-one-regular">Atelier del dulce</h3>
+                                <h3 class="fs-4 text-light">Av. Gran Chimú 515, <br>San Juan de Lurigancho 15401</h3>
+                                <p class="text-light">Telefono : 956 434 082</p>
+                                <p class="text-light">Correo Electronico : Y4NEY@hotmail.com</p>
+                            </article>
+                        </div>
+                        <div class="col-3">
+                            <article>
+                                <h3 class="text-light Vr-erica-one-regular">Siguenos Aqui </h3>
+                                    <a href="https://www.facebook.com"><img src="logo de facebook.png" alt="logo de facebook" width="50"></a>
+                                    <a href="https://www.instagram.com"><img src="log de ig.png" alt="logo de whatsapp" width="50"></a>
+                                    <a href="https://www.tiktok.com"><img src="tiktok.png" alt="logo de tik tok" width="45"></a>
+                            </article>
+                        </div>
+                        <div class="col-3">
+                            <article>
+                                <h3 class="text-light Vr-erica-one-regular">Medios de Pago </h3>
+                                    <img src="yape.jpg" width="50" >
+                                    <img src="BBVA.png" width="46" >
+                                    <img src="plin.jpg" width="45" >
+                            </article>
+                        </div>
+                        <div class="col-3">
+                            <article>
+                                <h2 class="text-light Vr-erica-one-regular">Horario de Atencion: </h2>
+                                <table class="text-light">
+                                  <thead>
+                                    <tr>
+                                      <td></td>
+                                      <td></td>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                       <td>Lunes</td>
+                                       <td>  De 8:30 am hasta 5:00 pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Martes</td>
+                                        <td>  Solo con Cita Previa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Miercoles</td>
+                                        <td>    De 10:00 am hasta 5:15 pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jueves</td>
+                                        <td>  De 8:30 am hasta 5:00 pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Viernes</td>
+                                        <td>  De 8:30 am hasta 5:00 pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sabado</td>
+                                    <td>  Solo con cita previa</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <p class="text-light Vr-footer-p">© 2026 El Atelier Del Dulce. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

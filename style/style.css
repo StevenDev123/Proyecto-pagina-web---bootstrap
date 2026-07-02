@@ -1,0 +1,31 @@
+.Vr-erica-one-regular {
+  font-family: "Erica One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Vr-pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Vr-main{
+  padding-top: 10%;
+}
+
+.Vr-bg{
+  background-color:antiquewhite;
+  width: 100%;
+  margin-top: 5%;
+  border-radius: 20px;
+}
+
+.Vr-Nosotros-img{
+  margin-top: 3%;
+  border-radius: 20px;
+}
+
+.Vr-footer-p{
+  padding-left: 35%;
+}
