@@ -66,13 +66,13 @@
          <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="fondo.jpg" class="d-block w-100 object-fit-cover">
+      <img src="fondo.jpg" alt="el atelier del dulce" class="d-block w-100 object-fit-cover">
     </div>
     <div class="carousel-item">
-      <img src="Torta de chocolate oferta.png" class="d-block w-100">
+      <img src="Torta de chocolate oferta.png" alt="torta de chocolate" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <img src="cheesecake oferta.png" class="d-block w-100">
+      <img src="cheesecake oferta.png" alt="cheesecake oferta" class="d-block w-100">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -98,7 +98,33 @@
                             <h2><span class="Vr-erica-one-regular">Cheescake de frutos rojos</span></h2>
                             <img src="cheesecake.jpg" alt="caja de Cheescake" class="rounded-3 img-fluid" width="260">
                             <p class="text-warning">$22.00</p>
-                            <button class="btn btn-danger">Comprar aqui</button>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal_cheescakefresa">Ordene Aqui</button>
+                            <div class="modal fade" id="modal_cheescakefresa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 Vr-erica-one-regular" id="modal_cheescakefresa">Cheesecake fresa</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="fresa.png" alt="caja de cheesecake" width="300" height="200">
+      </div>
+      <div><p>Base crujiente con una crema de queso horneada a la perfección y una brillante salsa de fresas naturales.</p></div>
+      <span class="text-warning text-center rounded-3">S/ 30.00</span>
+      <div>
+        <form>
+          <div class="mb-3 text-start">
+            <label class="form-label">¿Cuántos deseas ordenar?</label>
+            <input type="number" class="form-control" min="1" value="1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
                         </article>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
@@ -106,7 +132,33 @@
                             <h2><span class="Vr-erica-one-regular">Macarrones <br>Surtidos</span></h2>
                             <img src="macarones.jpg" alt="caja de macarones" class="rounded-3 img-fluid" width="260">
                             <p class="text-warning">s/20.00</p>
-                            <button class="btn btn-danger">Comprar aqui</button>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal_macarrones">Ordene Aqui</button>
+                            <div class="modal fade" id="modal_macarrones" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 Vr-erica-one-regular" id="modal_macarrones">Macarrones Surtidos</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="macarones.jpg" alt="caja de macarones" width="300" height="200">
+      </div>
+      <div><p>Finitas galletas francesas a base de almendras con diversos rellenos cremosos y colores vistosos.</p></div>
+      <span class="text-warning text-center rounded-3">S/ 20.00</span>
+      <div>
+        <form>
+          <div class="mb-3 text-start">
+            <label class="form-label">¿Cuántos deseas ordenar?</label>
+            <input type="number" class="form-control" min="1" value="1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
                         </article>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
@@ -114,31 +166,135 @@
                             <h2><span class="Vr-erica-one-regular">Torta Suprema<br> de Chocolate</span></h2>
                             <img src="torta de chocolate.jpg" alt="Tortadechcolate" class="rounded-3 img-fluid" width="260">
                             <p class="text-warning">s/50.00</p>
-                            <button class="btn btn-danger">Comprar aqui</button>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal_tortachocolate">Ordene Aqui</button>
+                            <div class="modal fade" id="modal_tortachocolate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 Vr-erica-one-regular" id="modal_tortachocolate">Torta suprema de chocolate</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="torta de chocolate 2.png" alt="torta de chocolate" width="300" height="200">
+      </div>
+      <div><p>Intensa y húmeda torta cubierta con un cremoso fudge artesanal, ideal para los verdaderos amantes del chocolate.</p></div>
+      <span class="text-warning text-center rounded-3">S/ 50.00</span>
+      <div>
+        <form>
+          <div class="mb-3 text-start">
+            <label class="form-label">¿Cuántos deseas ordenar?</label>
+            <input type="number" class="form-control" min="1" value="1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
                         </article>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
                         <article class="border border-danger p-3 rounded-3">
                             <h2><span class="Vr-erica-one-regular">Torta "Trend mundial"</span></h2>
-                            <img src="trend mundial.jpg" class="rounded-3 img-fluid" width="260" height="200">
+                            <img src="trend mundial.jpg" alt="pastel del mundial" class="rounded-3 img-fluid" width="260" height="200">
                             <p class="text-warning">s/50.00</p>
-                            <button class="btn btn-danger">Comprar aqui</button>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal_mundial">Ordene Aqui</button>
+                            <div class="modal fade" id="modal_mundial" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 Vr-erica-one-regular" id="modal_mundial">Trend Mundial</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="trend mundial.jpg" alt="pastel del mundial" width="300" height="200">
+      </div>
+      <div><p>Diseños en tendencia que son virales en redes sociales, ideales para capturar las mejores fotos antes de comerla.</p></div>
+      <span class="text-warning text-center rounded-3">S/ 50.00</span>
+      <div>
+        <form>
+          <div class="mb-3 text-start">
+            <label class="form-label">¿Cuántos deseas ordenar?</label>
+            <input type="number" class="form-control" min="1" value="1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
                         </article>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
                         <article class="border border-danger p-3 rounded-3">
                             <h2><span class="Vr-erica-one-regular">Suffle <br>Saludable</span></h2>
-                            <img src="suffle saludable.jpg" class="rounded-3 img-fluid" width="260" height="200">
+                            <img src="suffle saludable.jpg" alt="suffle saludable" class="rounded-3 img-fluid" width="260" height="200">
                             <p class="text-warning">s/15.00</p>
-                            <button class="btn btn-danger">Comprar aqui</button>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal_sufflesaludable">Ordene Aqui</button>
+                            <div class="modal fade" id="modal_sufflesaludable" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 Vr-erica-one-regular" id="modal_sufflesaludable">Suffle Saludable</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="suffle saludable.jpg" alt="suffle saludable" width="300" height="200">
+      </div>
+      <div><p>Una alternativa ligera y baja en calorías, endulzada de forma natural sin perder la clásica textura esponjosa.</p></div>
+      <span class="text-warning text-center rounded-3">S/ 15.00</span>
+      <div>
+        <form>
+          <div class="mb-3 text-start">
+            <label class="form-label">¿Cuántos deseas ordenar?</label>
+            <input type="number" class="form-control" min="1" value="1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
                         </article>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4">
                         <article class="border border-danger p-3 rounded-3">
                             <h2><span class="Vr-erica-one-regular">Cheesecake <br>de Fresa</span></h2>
-                            <img src="fresa.png" alt="Tortadechcolate" class="rounded-3 img-fluid" width="260" height="200">
+                            <img src="fresa.png" alt="cheesecake de fresa" class="rounded-3 img-fluid" width="260" height="200">
                             <p class="text-warning">$59.50</p>
-                            <button class="btn btn-danger">Comprar aqui</button>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal_cheescakefresa">Ordene Aqui</button>
+                            <div class="modal fade" id="modal_cheescakefresa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 Vr-erica-one-regular" id="modal_cheescakefresa">Cheesecake fresa</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="fresa.png" alt="cheescake de fresa" width="300" height="200">
+      </div>
+      <div><p>Base crujiente con una crema de queso horneada a la perfección y una brillante salsa de fresas naturales.</p></div>
+      <span class="text-warning text-center rounded-3">S/ 30.00</span>
+      <div>
+        <form>
+          <div class="mb-3 text-start">
+            <label class="form-label">¿Cuántos deseas ordenar?</label>
+            <input type="number" class="form-control" min="1" value="1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
                         </article>
                     </div>
                 </div>
@@ -172,9 +328,9 @@
                         <div class="col-12 col-sm-6 col-lg-3">
                             <article>
                                 <h3 class="text-light Vr-erica-one-regular">Medios de Pago </h3>
-                                    <img src="yape.jpg" width="50" >
-                                    <img src="BBVA.png" width="46" >
-                                    <img src="plin.jpg" width="45" >
+                                    <img src="yape.jpg" alt="yape" width="50" >
+                                    <img src="BBVA.png" alt="BBVA" width="46" >
+                                    <img src="plin.jpg" alt="plin" width="45" >
                             </article>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-3">
